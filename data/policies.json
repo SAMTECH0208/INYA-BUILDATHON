@@ -1,0 +1,80 @@
+[
+  {
+    "policy_id":"HLT_BASIC_001",
+    "name":"Health Shield Basic",
+    "type":"health",
+    "sum_insured":[300000,500000,700000],
+    "premium_yearly":{"300000":8500,"500000":11000,"700000":14500},
+    "eligibility":{"min_age":18,"max_age":65},
+    "waiting_period_days":30,
+    "exclusions":["cosmetic procedures","pre-existing for 24 months"],
+    "riders":[{"id":"HOS_CASH","name":"Hospital Cash","premium":1200},{"id":"CRIT_COV","name":"Critical Illness Rider","premium":3500}]
+  },
+  {
+    "policy_id":"HLT_FAMILY_002",
+    "name":"Family Care Plus",
+    "type":"health",
+    "sum_insured":[500000,1000000],
+    "premium_yearly":{"500000":16000,"1000000":29000},
+    "eligibility":{"min_age":0,"max_age":65},
+    "waiting_period_days":90,
+    "exclusions":["maternity for 48 months","pre-existing for 24 months"],
+    "riders":[{"id":"MAT_BEN","name":"Maternity Add-on","premium":6000}]
+  },
+  {
+    "policy_id":"HLT_PREMIUM_003",
+    "name":"Health Shield Premium",
+    "type":"health",
+    "sum_insured":[1000000,2000000],
+    "premium_yearly":{"1000000":42000,"2000000":78000},
+    "eligibility":{"min_age":18,"max_age":60},
+    "waiting_period_days":30,
+    "exclusions":["cosmetic procedures","pre-existing for 24 months"],
+    "riders":[{"id":"HOS_CASH","name":"Hospital Cash","premium":2500},{"id":"ICU","name":"Enhanced ICU Cover","premium":4800}]
+  },
+
+  { "policy_id":"LIF_TERM_001","name":"Life Term Secure 10YR","type":"term","term_years":[10,20,30],"premium_yearly":{"10":4200,"20":6800,"30":9200},"sum_assured":[1000000,2000000],"eligibility":{"min_age":18,"max_age":55},"features":["pure term, death benefit only"],"exclusions":["suicide within 12 months"],"riders":[{"id":"ACCIDEATH","name":"Accidental Death Rider","premium":400}] },
+
+  { "policy_id":"LIF_INV_002","name":"LifeProtect UnitLink","type":"life","term_years":[15,25],"premium_yearly":{"15":15000,"25":21000},"sum_assured":[500000,1000000],"eligibility":{"min_age":18,"max_age":60},"features":["market-linked returns (not guaranteed)"],"exclusions":["investment returns not guaranteed"],"riders":[{"id":"WAIVER","name":"Premium Waiver","premium":900}] },
+
+  { "policy_id":"LIF_ENDOW_003","name":"Endowment Secure","type":"life","term_years":[20],"premium_yearly":{"20":22000},"sum_assured":[750000],"eligibility":{"min_age":18,"max_age":50},"features":["maturity benefit guaranteed per mock"],"exclusions":["partial withdrawals limited"],"riders":[{"id":"CRIT_LIFE","name":"Critical Illness","premium":4200}] },
+
+  { "policy_id":"MTR_COM_001","name":"MotorCare Comprehensive","type":"motor","vehicle_type":["car","suv"],"sum_insured":[500000],"premium_yearly":{"500000":12000},"eligibility":{},"waiting_period_days":0,"exclusions":["non-manufacture modifications not covered"],"riders":[{"id":"ZERO_DEP","name":"Zero Depreciation","premium":3200},{"id":"ENG_PROT","name":"Engine Protection","premium":1500}] },
+
+  { "policy_id":"MTR_TP_002","name":"Motor Third Party","type":"motor","vehicle_type":["car","suv","motorcycle"],"sum_insured":[null],"premium_yearly":{"default":3500},"eligibility":{},"waiting_period_days":0,"exclusions":["own damage not covered"],"riders":[{"id":"ADD_PA","name":"Personal Accident","premium":600}] },
+
+  { "policy_id":"MTR_TWO_003","name":"TwoWheeler Protect","type":"motor","vehicle_type":["motorcycle"],"sum_insured":[null],"premium_yearly":{"default":1200},"eligibility":{},"waiting_period_days":0,"exclusions":["rider under influence"],"riders":[{"id":"ZERO_DEP_TWO","name":"Zero Depreciation","premium":900}] },
+
+  { "policy_id":"HLT_SENIOR_004","name":"Senior Care Health","type":"health","sum_insured":[300000,500000],"premium_yearly":{"300000":20000,"500000":34500},"eligibility":{"min_age":60,"max_age":75},"waiting_period_days":365,"exclusions":["pre-existing for 48 months"],"riders":[{"id":"HOME_NURS","name":"Home Nursing Support","premium":4200}] },
+
+  { "policy_id":"LIF_CHILD_004","name":"Child Future Plan","type":"life","term_years":[18],"premium_yearly":{"18":6500},"sum_assured":[300000],"eligibility":{"min_age":18,"max_age":45},"features":["education payout on maturity"],"exclusions":[],"riders":[] },
+
+  { "policy_id":"TERM_PREMIUM_004","name":"Term Protect Plus","type":"term","term_years":[30],"premium_yearly":{"30":10500},"sum_assured":[2000000],"eligibility":{"min_age":18,"max_age":60},"exclusions":["suicide 12 months"],"riders":[{"id":"CRIT_TERM","name":"Critical Illness","premium":8000}] },
+
+  { "policy_id":"HLT_MAT_005","name":"Maternity Cover","type":"health","sum_insured":[300000],"premium_yearly":{"300000":14000},"eligibility":{"min_age":21,"max_age":40},"waiting_period_days":365,"exclusions":["pre-existing for 36 months"],"riders":[{"id":"NEWB_COV","name":"Newborn Cover","premium":3500}] },
+
+  { "policy_id":"LIF_INV_HIGH_005","name":"Wealth Builder ULIP","type":"life","term_years":[20,25],"premium_yearly":{"20":45000,"25":52000},"sum_assured":[1000000],"eligibility":{"min_age":18,"max_age":55},"features":["market-linked (not guaranteed)"],"exclusions":["returns not guaranteed"],"riders":[{"id":"TOPUP","name":"Top-up Premium Facility","premium":0}] },
+
+  { "policy_id":"MTR_COMM_004","name":"Commercial Vehicle Shield","type":"motor","vehicle_type":["truck","van"],"sum_insured":[1000000],"premium_yearly":{"1000000":38000},"eligibility":{},"waiting_period_days":0,"exclusions":["overloading not covered"],"riders":[{"id":"CARGO","name":"Cargo Protect","premium":5000}] },
+
+  { "policy_id":"HLT_ACCIDENTAL_006","name":"Accident Care","type":"health","sum_insured":[500000],"premium_yearly":{"500000":6800},"eligibility":{"min_age":18,"max_age":70},"waiting_period_days":0,"exclusions":["self-inflicted injuries"],"riders":[{"id":"PA_EXTRA","name":"Personal Accident Extra","premium":800}] },
+
+  { "policy_id":"TERM_LOW_005","name":"Term Economy","type":"term","term_years":[20],"premium_yearly":{"20":3200},"sum_assured":[500000],"eligibility":{"min_age":18,"max_age":55},"exclusions":["suicide 12 months"],"riders":[{"id":"ACCIDENTADD","name":"Accidental Benefit","premium":300}] },
+
+  { "policy_id":"LIF_RETIRE_006","name":"RetireSecure Annuity (mock-guaranteed)","type":"life","term_years":[15],"premium_yearly":{"15":60000},"sum_assured":[null],"eligibility":{"min_age":40,"max_age":65},"features":["annuity on maturity (mock guarantee)"],"exclusions":["tax advice excluded"],"riders":[] },
+
+  { "policy_id":"HLT_DENTAL_007","name":"Dental Care Rider","type":"health","sum_insured":[null],"premium_yearly":{"default":1500},"eligibility":{"min_age":5,"max_age":65},"waiting_period_days":90,"exclusions":["cosmetic dentistry"],"riders":[] },
+
+  { "policy_id":"LIF_PREM_007","name":"Life Protect Plus","type":"life","term_years":[30],"premium_yearly":{"30":18500},"sum_assured":[1500000],"eligibility":{"min_age":18,"max_age":55},"exclusions":["suicide 12 months"],"riders":[{"id":"CRIT_LIFE_2","name":"Extended CI","premium":6800}] },
+
+  { "policy_id":"HLT_BASE_LOW_008","name":"Health Care Starter","type":"health","sum_insured":[200000,300000],"premium_yearly":{"200000":5200,"300000":7600},"eligibility":{"min_age":18,"max_age":60},"waiting_period_days":180,"exclusions":["pre-existing 24 months"],"riders":[{"id":"AMB_CASH","name":"Ambulance Cash","premium":400}] },
+
+  { "policy_id":"MTR_2W_PREM_005","name":"TwoWheeler Premium Plus","type":"motor","vehicle_type":["motorcycle"],"sum_insured":[null],"premium_yearly":{"default":2600},"eligibility":{},"waiting_period_days":0,"exclusions":["rider exceeding speed limits"],"riders":[{"id":"ZERO_DEP_TWO_PREM","name":"Zero Depreciation","premium":1100},{"id":"THEFT","name":"Theft Protection","premium":600}] },
+
+  { "policy_id":"HLT_CDI_009","name":"CriticalCare DI","type":"health","sum_insured":[1000000],"premium_yearly":{"1000000":56000},"eligibility":{"min_age":25,"max_age":60},"waiting_period_days":90,"exclusions":["cancer under 12 months"],"riders":[{"id":"SURG_ALLOW","name":"Surgical Allowance","premium":3000}] },
+
+  { "policy_id":"LIF_CHILD_INV_008","name":"Child Invest & Protect","type":"life","term_years":[18],"premium_yearly":{"18":9800},"sum_assured":[500000],"eligibility":{"min_age":18,"max_age":45},"features":["partial withdrawals on education"],"exclusions":[],"riders":[{"id":"EDU_TOPUP","name":"Education Top-up","premium":2000}] },
+
+  { "policy_id":"HLT_TPA_010","name":"TPA Assisted Health","type":"health","sum_insured":[500000],"premium_yearly":{"500000":13000},"eligibility":{"min_age":18,"max_age":65},"waiting_period_days":30,"exclusions":["experimental treatments"],"riders":[{"id":"TPA_PRI","name":"TPA Priority Support","premium":1200}] }
+]
+
